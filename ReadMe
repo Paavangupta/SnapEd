@@ -1,0 +1,44 @@
+Inspiration
+  As college students at UC Berkeley, we observed that endless doomscrolling leaves many of us feeling drained and unfulfilled—hours spent on “brain rot” reels without any sense of learning   or growth. This negative experience sparked our curiosity: how could we transform mindless scrolling into an engaging, educational experience? SnapEd was born from the idea of leveraging   modern AI to convert wasted time into bite‑sized moments of insight.
+
+What It Does
+  SnapEd transcends traditional short-form videos by dynamically generating immersive, fun, and educational clips. It empowers users to:
+    Curate Their Content: Users choose topics they’re interested in.
+    Engage Actively: The platform learns from user engagement—tracking watch time and preferences to fine-tune future content.
+    Deliver High-Value Learning: It generates a concise script, creates corresponding images and audio (with varied voices), and seamlessly stitches them into a 30‑second video.
+    Keep It Fresh: As users scroll, SnapEd continuously produces new videos tailored to their evolving interests, turning every scroll into a learning opportunity.
+
+How We Built It
+  We built SnapEd using a modular and scalable approach:
+    Frontend: Developed in Next.js, offering an interactive and responsive user experience.
+    AI Integration: We use large language models to craft engaging scripts and DALL‑E to generate eye‑catching visuals. Google Cloud Text‑to‑Speech adds a dynamic auditory element, using                       multiple accents and genders to keep content lively.
+    Video Assembly: ffmpeg stitches together images, audio, and smooth transitions, creating a polished final video.
+    Background Processing: To minimize wait times, the system pre-generates the next video in the background while the current one is being viewed.
+    Personalization: User interactions are logged to optimize future video content based on engagement patterns.
+
+
+Challenges We Ran Into
+  Our journey wasn’t without hurdles:
+    Latency & Quality: AI-based video generation is inherently slow, so designing a system that’s both rapid and engaging was a key challenge.
+    New Technologies: Integrating APIs, handling asynchronous tasks, and building our first hackathon project pushed us out of our comfort zones.
+    Precision in Prompts: Crafting prompts that consistently yield the right visual style required several iterations.
+    Balancing Act: We had to ensure that rapid content generation didn’t compromise the quality and educational value of the videos.
+
+
+Accomplishments We’re Proud Of
+    We’re proud to have built a working website that demonstrates a novel way to reclaim digital time:
+    Successfully integrated diverse AI technologies into a single, cohesive platform.
+    Engineered a system that pre-generates content in the background to deliver a seamless user experience.
+    Developed a personalized feedback loop that adapts to user behavior and optimizes content in real-time.
+    Overcame the challenges of our first hackathon experience and built a robust, engaging product.
+    What We Learned
+    Through SnapEd, we deepened our understanding of AI integration, asynchronous processing, and user behavior analytics. We learned the importance of precision in prompt engineering, the     challenges of real-time video generation, and how to turn a negative habit into a constructive learning tool.
+
+What’s Next for SnapEd
+Looking ahead, our roadmap includes:
+  Cloud Deployment: Scaling SnapEd for a broader audience by hosting it on a robust cloud infrastructure.
+  Optimized Video Generation: Enhancing our AI pipeline to speed up video processing while cutting costs.
+  Advanced Personalization: Refining our recommendation engine to deliver even more tailored content.
+  Expanded Content: Broadening our topic library to engage users across diverse fields.
+
+With SnapEd, we’re not just stopping doomscrolling—we’re redefining it as a pathway to continuous learning and discovery.
